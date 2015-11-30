@@ -1,2 +1,4 @@
-# GameOfLife
-Conway's Game of Life written in C++
+# Game of Life clone in C++
+ <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of Life</a> implemented in <a href="https://en.wikipedia.org/wiki/C%2B%2B">C++</a> using <a href="http://www.sfml-dev.org/">SFML</a> for rendering.
+
+<img src="http://i.imgur.com/n5OEVzp.png"/>
