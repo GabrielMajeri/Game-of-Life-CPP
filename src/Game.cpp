@@ -30,15 +30,17 @@ void Game::gameLoop()
     {
         // Handle user input
         sf::Event event;
+        
+        // Decrement the pauseTimer
+        if(pauseTimer > 0) pauseTimer--;
+        
         while(w.pollEvent(event))
         {
             // Close the window after pressing the 'X' button
             // or after pressing ESCAPE
             if(event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
                 w.close();
-
-            // Decrement the pauseTimer
-            if(pauseTimer > 0) pauseTimer--;
+            
             // Toggle paused mode
             if(pauseTimer == 0 && sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
                 paused = !paused, pauseTimer = 20;
